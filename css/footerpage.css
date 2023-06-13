@@ -1,0 +1,21 @@
+/*------Blog Page Footer -----*/
+
+footer {
+    margin-top: 20px;
+
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer ul {
+    font-size: 25px;
+    list-style-type: none;
+    color: palevioletred;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 70px;
+
+}

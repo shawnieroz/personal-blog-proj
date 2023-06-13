@@ -1,0 +1,33 @@
+/* --------Navigation Bar ----- */
+nav {
+    background-color: palevioletred;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+}
+
+nav {
+    grid-area: nv;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+a {
+    color: #fff;
+}
+
+nav h1 {
+    color: #fff;
+    margin-left: 20px;
+    font-family: 'Vina Sans', cursive;
+    font-size: 30px;
+}

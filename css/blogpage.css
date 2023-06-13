@@ -1,0 +1,178 @@
+@import url('./nav.css');
+@import url('./footerpage.css');
+
+/*----Body ----*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Vina Sans', sans-serif;
+    color: palevioletred;
+}
+
+h4 {
+    color: rgb(38, 165, 204);
+    font-family: 'Vina Sans', sans-serif;
+}
+
+/*---- Blog / Section / Sidebar CSS Grid ----*/
+
+.container {
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: auto 50px;
+    grid-template-areas:
+        "bl sd"
+        "ft ft";
+}
+
+.blog {
+    grid-area: bl;
+    margin: 20px;
+
+}
+
+.sidebar {
+    border-left: 4px dashed palevioletred;
+    grid-area: sd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    grid-area: ft;
+}
+
+
+/* ------- Blog Section ----- */
+
+.gingerbread {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    border: 3px dashed palevioletred;
+}
+
+blockquote {
+    background-color: pink;
+    padding: 15px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.blog p a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #26a5cc;
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.blog p a:hover {
+    background-color: palevioletred;
+}
+
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+/*------ Sidebar -----*/
+.cones {
+    width: auto;
+}
+
+
+
+/* ------- Blog Page Tablet Responsive Screens -----------*/
+
+@media screen and (max-width: 820px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "bl"
+            "sd"
+            "ft";
+        margin-top: 30px;
+    }
+
+    .blog h2 {
+        margin-left: 30px;
+    }
+
+    .chocolate {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar {
+        border: none;
+    }
+
+    .sidebar img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/* ------- Mobile Responsive Screens -----------*/
+
+@media screen and (max-width: 390px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+
+    nav h1 {
+        text-align: center;
+        margin-bottom: -10px;
+    }
+
+    .blog,
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .sidebar img {
+        width: auto;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+}

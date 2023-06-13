@@ -1,0 +1,108 @@
+ @import url('./nav.css');
+ @import url('./responsivesite.css');
+ @import url('./footersite.css');
+
+ /*--- Body CSS Grid ----*/
+
+ .container {
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 50px auto 50px;
+     grid-template-areas:
+         "nv nv"
+         "sc sc"
+         "ft ft";
+ }
+
+ .card {
+     grid-area: sc;
+ }
+
+ footer {
+     grid-area: ft;
+     text-align: center;
+     margin: 20px;
+ }
+
+ /*----Body ----*/
+
+ h1,
+ h3 {
+     font-family: 'Vina Sans', sans-serif;
+ }
+
+ h4 {
+     color: #26a5cc;
+     font-family: 'Vina Sans', sans-serif;
+ }
+
+ h1 {
+     color: palevioletred;
+ }
+
+ h3 {
+     color: #d2bf57;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+ }
+
+
+
+ /*----- Section w/ Images  -----*/
+
+ .card {
+     border: 4px dashed palevioletred;
+     display: flex;
+     justify-content: space-evenly;
+     gap: 15px;
+     margin-top: 120px;
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+
+ .box {
+     height: auto;
+     width: auto;
+     margin: 20px;
+     background-color: #e9d2da;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 5px #b3e2f1;
+ }
+
+ .box p {
+     padding-bottom: 15px;
+ }
+
+ button {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #26a5cc;
+    padding: 10px;
+    border: none;
+ }
+
+ button:hover {
+    background-color: palevioletred;
+ }
+ 
+ a:link {
+     text-decoration: none;
+ }
+
+
+ .icecream {
+     width: 100%;
+     padding-top: 50;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ figcaption {
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 200;
+     font-size: 10px;
+ }

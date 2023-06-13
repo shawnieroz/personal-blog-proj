@@ -1,0 +1,74 @@
+ /* ------- Blog Site Tablet Responsive Screens -----------*/
+
+ @media screen and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nv"
+            "sc"
+            "ft";
+    }
+
+    .icecream {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icecreamfalling {
+        padding-bottom: 0;
+    }
+
+
+    .box {
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .card h3,
+    p {
+        padding-right: 0;
+    }
+
+
+}
+
+/* ------- Mobile Responsive Screens -----------*/
+
+@media screen and (max-width: 490px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+
+    nav h1 {
+        text-align: center;
+        margin-bottom: -10px;
+    }
+
+    .card {
+        border: none;
+    }
+
+}
